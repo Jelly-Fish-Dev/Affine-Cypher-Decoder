@@ -1,4 +1,4 @@
-#Affine Cypher Decoder
+# Affine Cypher Decoder
 
 An Affine Cypher is a Cypher that generates an encoded string using the formula
 ```C = aP + b```
