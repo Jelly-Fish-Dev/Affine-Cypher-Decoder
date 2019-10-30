@@ -26,16 +26,17 @@ def Decode(input):
                     str_out = str_out + chr((((letter * a) + b) % 26) + 96)
                 else:
                     str_out = str_out + " "
-            if spellcheck(str_out):
+            if _spellcheck(str_out):
                 return str_out
             str_out = ""
         
-def spellcheck(word_str):
+def _spellcheck(word_str):
     words = word_str.split()
     correct = 0
     for word in words:
         if any(word == a for a in d ):
             correct += 1
+            print(word)
         else:
             return
     if correct == len(words):
