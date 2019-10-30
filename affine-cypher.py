@@ -14,10 +14,10 @@ def Affine (input):
             input_number_arr.append(ord(char.lower()) - 96)
         else:
             input_number_arr.append(0)
-    solution = Decode(input_number_arr)
+    solution = _Decode(input_number_arr)
     return solution
 
-def Decode(input):
+def _Decode(input):
     str_out = ""
     for a in range(1, 20):
         for b in range(1,20):
